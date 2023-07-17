@@ -1,0 +1,20 @@
+<nav>
+  <ul id="sideNav">
+    <li><a routerLink="/home" [ngClass]="{'selectedMenuItem': selectedItem === 'item1'}"
+        (click)="selectedItem = 'item1'">Home</a></li>
+    <li><a routerLink="/home" [ngClass]="{'selectedMenuItem': selectedItem === 'item2'}"
+        (click)="selectedItem = 'item2'">Angular</a></li>
+    <li><a routerLink="/home" [ngClass]="{'selectedMenuItem': selectedItem === 'item3'}"
+        (click)="selectedItem = 'item3'">Angular Material</a></li>
+    <li><a routerLink="/home" [ngClass]="{'selectedMenuItem': selectedItem === 'item4'}"
+        (click)="selectedItem = 'item4'">Typescript</a></li>
+    <li><a routerLink="/home" [ngClass]="{'selectedMenuItem': selectedItem === 'item5'}"
+        (click)="selectedItem = 'item5'">RxJS</a></li>
+    <li><a routerLink="/home" [ngClass]="{'selectedMenuItem': selectedItem === 'item6'}"
+        (click)="selectedItem = 'item6'">Bootstrap</a></li>
+    <li><a routerLink="/home" [ngClass]="{'selectedMenuItem': selectedItem === 'item7'}"
+        (click)="selectedItem = 'item7'">CSS Grid</a></li>
+    <li><a routerLink="/privacy-policy" [ngClass]="{'selectedMenuItem': selectedItem === 'item8'}"
+        (click)="selectedItem = 'item8'">Privacy Policy</a></li>
+  </ul>
+</nav>

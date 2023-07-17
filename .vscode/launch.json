@@ -16,6 +16,7 @@
         "/./~/*": "${webRoot}/node_modules/*"
       },
       "sourceMaps": true,
+      //"resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"],
       "postDebugTask": "stop server"
     },
     {
@@ -33,7 +34,7 @@
         "/src/*": "${webRoot}/*",
         "/*": "*",
         "/./~/*": "${webRoot}/node_modules/*"
-      },
+      }
     },
     {
       "name": "ng e2e",

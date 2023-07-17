@@ -1,7 +1,7 @@
 {
     "env": {
       "browser": true,
-      "es2021": true,
+      "es2022": true,
       "node": true
     },
     "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
@@ -16,8 +16,6 @@
         "error",
         2,
         {
-          // typescript docs indent the case from the switch
-          // https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-8.html#example-4
           "SwitchCase": 1,
           "flatTernaryExpressions": false,
           "ignoredNodes": []

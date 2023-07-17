@@ -1,4 +1,112 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #E4F0FF;
+}
+
+.container_css_grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 12px;
+  grid-template-areas:
+    "header header"
+    "nav content";
+  height: 100vh;
+}
+
+app-header {
+  color: white;
+  font-size: 14px;
+  grid-area: header;
+  text-align: left;
+  background-color: #004E7C;
+  grid-column: col 0 / span 3;
+  grid-row: row 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+app-nav {
+  grid-area: nav;
+  margin-left: 0.6rem;
+  background-color: #591C0B;
+}
+
+app-privacy-policy,
+app-home {
+  grid-area: content;
+  background-color: #DCE1E3;
+  padding: 25px;
+  margin-right: 0.6rem;
+}
+
+app-aside {
+  grid-area: side;
+  margin-right: 0.6rem;
+  background-color: #591C0B;
+}
+
+app-footer {
+  grid-area: footer;
+  background-color: #5C5F58;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+
+ul li {
+  color: white;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  padding-left: 4px;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+
+  app-nav,
+  app-aside {
+    margin: 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "side"
+      "footer";
+    grid-template-rows: auto minmax(60px, auto) 1fr minmax(70px, auto) auto;
+  }
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+h2.heading-text {
+  margin-bottom: 4px;
+}
+
+
+.selectedMenuItem {
+  border: 1px solid #DCE1E3;
+  background-color: #004E7C;
+  font-weight: bold;
+}
