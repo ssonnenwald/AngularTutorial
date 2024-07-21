@@ -10,7 +10,10 @@
       "icon": "terminal-powershell"
     },
     "Command Prompt": {
-      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
       "args": [],
       "icon": "terminal-cmd"
     },
@@ -57,5 +60,8 @@
   "git.enableSmartCommit": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "importCost.typescriptExtensions": ["\\.tsx?$"],
-  "debug.javascript.autoAttachFilter": "disabled"
+  "debug.javascript.autoAttachFilter": "disabled",
+  "editor.folding": true,
+  "workbench.tree.enableStickyScroll": true,
+  "editor.stickyScroll.scrollWithEditor": false
 }
